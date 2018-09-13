@@ -1,0 +1,6 @@
+*.exe
+*.wasm
+*.asm.js
+fibonacci.js
+fibonacci.html
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Herbert Braun">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Emscripten-Test</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Emscripten-Test</h1>
+    <h2>Fibonacci-Berechnung</h2>
+    <form action="#">
+      <label>
+        Zahl:
+        <input name="n" type="number" min="1" max="93">
+      </label>
+      <div>
+        Sprache:
+        <label>
+          <input type="radio" name="language" value="JS" checked>
+          JavaScript
+        </label>
+        <label>
+          <input type="radio" name="language" value="C++">
+          C++
+        </label>
+      </div>
+      <div>
+        Algorithmus
+        <label>
+          <input type="radio" name="algorithm" value="slow" checked>
+          langsam
+        </label>
+        <label>
+          <input type="radio" name="algorithm" value="fast">
+          schnell
+        </label>
+      </div>
+      <button id="single">Einzelne Zahl berechnen</button>
+      <button id="sequence">Zahlenfolge berechnen</button>
+      <output></output>
+    </form>
+    {{{ SCRIPT }}}
+    <script src="formdata.js"></script>
+  </body>
+</html>
