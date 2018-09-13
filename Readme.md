@@ -10,8 +10,7 @@ algorithms, and measures performance.
 
 This project can be compiled with Emscripten using the following command:
 
-    emcc fibonacci.cpp -s "EXPORTED_FUNCTIONS=['_fibstring']" -s 
-"EXTRA_EXPORTED_RUNTIME_METHODS=['cwrap']" -O3 --shell-file "container.html" -o 
-fibonacci.html
+    emcc fibonacci.cpp -s "EXPORTED_FUNCTIONS=['_fibstring']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['cwrap']" -O3 --shell-file "container.html" -o 
+fibonacci.
 
 This project was created as demo for a tutorial in [c't Magazin](https://ct.de/).
