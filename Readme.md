@@ -8,7 +8,7 @@ algorithms, and measures performance.
 - formdata.js	Script required by container.html
 - style.css	CSS required by container.html
 
-This project can be compiled with Emscripten using the following command (Windows syntax):
+This project can be compiled with [Emscripten](https://github.com/kripken/emscripten/) using the following command (Windows syntax):
 
     emcc fibonacci.cpp -s "EXPORTED_FUNCTIONS=['_fibstring']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['cwrap']" -O3 --shell-file container.html -o fibonacci.html
 
